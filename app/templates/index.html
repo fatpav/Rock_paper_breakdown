@@ -5,15 +5,24 @@
     <body>
         <h1>Paul's Super Fun Game</h1>
         <p>Get ready for THE most exciting game since PUBG!</p>
-        <h2>Prepare for battle, Peon!</h2>
-        <form action="Goto_next_page"></form>
-        <a href="/players">><input type="submit" value = "To Battle!"></a>
-        
-        <hr>
-        {% block content %}
-
-        {% endblock %}
+        <h2>Prepare for battle, Peons!</h2> 
+        <form action="play-game-player1" method='POST'>Play the game!</form>
+        <label for="player_1_choice">Choose your weapon, zero!</label>
+        <select name="player1_weapon" id="player_1_choice">
+            <option value="">-- Choose your weapon --</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <label for="player-2-choice">Choose YOUR weapon, other zero!</label>
+        <select name="player2_weapon" id="player_2_choice">
+            <option value="">-- Choose your weapon --</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
     </body>
+
 
 </html>
         
