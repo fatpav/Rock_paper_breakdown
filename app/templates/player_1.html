@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block content %}
+    <h1>Player 1.  Your Move.</h1>
+
+    <form action="/play-game-player1" method = "POST">Play the game Player 1!</form>
+        <label for="player1_name">Player 1 enter your name:</label>
+        <input required type="text" name="player_1" id="player_1_name" placeholder="Enter name">
+        <label for="player_1_choice">Choose your weapon, zero!</label>
+        <select name="" id="player_1_choice">
+            <option value="">-- Choose your weapon --</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <a href="/play-game-player2"></a><input type="submit" >
+
+{% endblock %}        
+  
