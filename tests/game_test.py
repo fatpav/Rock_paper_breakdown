@@ -1,12 +1,12 @@
 import unittest
-from src.game import *
-from src.player import Player
+from app.models.game import *
+from app.models.player import *
 
 
 class TestGame(unittest.TestCase):
 
     def setUp(self):
-        self.player1 = Player("Paul", "paper")
+        self.player1 = Player("Paul", "paper")a
         self.player2 = Player("Simon", "rock")
 
     def test_player_1_wins(self):

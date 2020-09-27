@@ -1,12 +1,20 @@
-<html>
-    <head>
-        <title>{{ title }} - Paul's Super Fun Time</title>
-    </head>
-    <body>
-        <h1>Paul's Super Fun Game</h1>
-        <p>Get ready for THE most exciting game since PUBG!</p>
-        <h2>Prepare for battle, Peons!</h2> 
-        <form action="play-game-player1" method='POST'>Play the game!</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+</head>
+<body>
+    <h1>Paul's Super Fun Game</h1>
+    <p>Get ready for THE most exciting game since PUBG!</p>
+    <h2>Prepare for battle, Peons!</h2> 
+
+    {{ game_result }}
+    
+</body>
+</html>       
+        <!-- <form action="/result" method='POST'>Play the game!</form>
         <label for="player_1_choice">Choose your weapon, zero!</label>
         <select name="player1_weapon" id="player_1_choice">
             <option value="">-- Choose your weapon --</option>
@@ -21,8 +29,4 @@
             <option value="paper">Paper</option>
             <option value="scissors">Scissors</option>
         </select>
-    </body>
-
-
-</html>
-        
+        <input type="submit"> -->
